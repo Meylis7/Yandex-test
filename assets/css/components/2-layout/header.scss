@@ -1,0 +1,18 @@
+// Header =====================
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 26px 0;
+    z-index: 10;
+
+    .logo {
+        display: block;
+        width: 245px;
+
+        img {
+            @include ImgCon;
+        }
+    }
+}

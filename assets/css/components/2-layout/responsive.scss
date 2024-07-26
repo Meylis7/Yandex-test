@@ -1,0 +1,89 @@
+// 1400 ========================
+@include xlg-xxxlg {}
+
+// 1200 ========================
+@include xlg-xxlg {}
+
+// 1100 =======================
+@include lg-xxlg {
+
+    .auto_container {
+        padding: 0 35px;
+    }
+
+}
+
+// 1000 ======================
+@include lg-xlg {}
+
+// 750 ========================
+@include lg-lg {
+    .slider-item {
+        min-width: 100%;
+    }
+
+    .stages_box {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slide {
+        min-width: 100%;
+        transition: transform 0.5s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 5px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ddd;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background-color: #333;
+    }
+}
+
+// 650 =======================
+@include md-sm {}
+
+// 400 ===========================
+@include md-xsm {
+    .auto_container {
+        padding: 0 20px;
+    }
+}
